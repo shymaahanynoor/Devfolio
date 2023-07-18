@@ -1,0 +1,426 @@
+*{
+    box-sizing: border-box;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.nav{
+    background-color: transparent;
+
+}
+.navbar-expand-lg .navbar-nav .nav-item{
+    position: relative;
+    font-weight: 500;
+
+}
+
+.navbar-expand-lg .navbar-nav .nav-item .nav-link::after{
+  content: "";
+  width: 0px;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+ left:17px;
+
+  background-color: #fff;
+  transition: all 1s;
+}
+.navbar-expand-lg .navbar-nav .nav-item .nav-link:hover::after{
+    width: 40%;
+}
+.navbar-expand-lg .navbar-nav .nav-item .active::after{
+    content: "";
+    width: 40%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+   left:17px;
+ 
+  
+    background-color: #fff;
+}
+.home{
+    position: relative;
+    background-image: url(../image/intro-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+} 
+.home .header h1{
+    font-size: 75px;
+ }
+ 
+/*tablet*/
+@media screen and ( max-width:979px) and ( min-width:768px){
+    .inner{
+        font-size: 60px;
+    }  
+    .icon .icon-1  i{
+        margin-left: -10px;
+        font-size: 5px;}
+   
+ 
+
+
+.service .container .service-2 i{
+    font-size: 10px;
+}
+}
+ /*phone land*/
+ 
+@media screen and ( max-width:767px) and ( min-width:500px){
+    .home .header h1{
+   font-size: 50px;
+    }   
+    
+    .inform .img img{
+        width: 50%;
+    }
+    
+    .icon{
+        height: 120vh;;
+    }
+    .contact .cards{
+        padding-top: 80px;
+    } 
+}
+ /*small phone*/
+ 
+@media screen and ( max-width:499px){
+    .home .header h1{
+      font-size: 30px;
+    }
+    .contact .cards{
+        padding-top: 80px;
+    } 
+    
+    .icon{
+        height: 120vh;;
+    }
+    
+ }
+
+.navbar-toggler-icon{
+color: #fff;
+}
+ .home .overlay{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    background-color: rgb(0,0,0,.5);}
+ 
+.skill-1 div,.skill-1 div div{
+    height: 10px;
+ 
+} 
+.about-me{
+    position: relative;
+}
+.service{
+  position: relative;  
+}
+.about-me h3::after{
+    content: "";
+    position: absolute;
+    background-color: blue;
+    width: 20%;
+    height: 3px;
+    bottom: 90%;
+    left: 10px;
+}
+.service h2::after{
+    content: "";
+    position: absolute;
+    background-color: blue;
+    width: 3%;
+    height: 4px;
+    bottom: 88%;
+    left:48%;
+}
+.service .container .service-1{
+    background-color: rgb(0,120,225);
+    transition: all 1s;
+}
+
+.service .container .service-2{
+    background-color: #fff;
+    transition: all .5s;
+}
+
+.service .container .service-1:hover{
+    background-color: #B6EADA;
+}
+
+.service .container .service-2:hover{
+    background-color: rgb(0,120,225);
+}
+
+.service .container .service-2 i{
+ color: #000;
+ font-size: 50px;
+}
+    
+.service .container .service-2:hover i{
+color: #fff;
+
+}
+.icon{
+
+    padding: 13rem 0;
+    background-image: url(../image/counters-bg.jpg);
+    background-size: cover;
+    background-position:top;
+    background-attachment: fixed;
+    position: relative;
+}
+.icon .container .row{
+    width: 100%;
+    height: 100%;
+}
+
+.icon .overlay ,.extra .overlay,.contact .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 120, 255,.7);
+   
+} 
+
+.icon .icon-1{
+    border: 10px solid rgba(255,255,255,.7);
+    background-color: transparent;
+    margin: auto;
+    border-radius: 50%;
+    padding: 10px;
+    width: 35%;}
+.icon .icon-1  i{
+    
+  color: #fff;
+  text-align: center;
+}
+
+.work{
+    position: relative;
+}
+.work h3::after ,.blog h3::after{
+    content: "";
+    position: absolute;
+    background-color: blue;
+    width: 3%;
+    height: 4px;
+    bottom: 83%;
+    left:48%;
+    
+}
+.blog h3::after{
+    bottom: 80%;
+}
+
+
+.blog {
+position: relative;
+}
+.work .card div{
+    overflow: hidden;
+   
+}
+
+.work .card img{
+    transition: all 2s;
+}
+
+.work .card img:hover{
+   transform: scale(1.5);
+   
+}
+
+.extra,.contact{
+    position: relative;
+    padding: 8rem 0;
+    background-image: url(../image/overlay-bg.jpg);
+    background-size:cover;
+   background-position:center center;
+    background-attachment:fixed;
+
+}
+.contact{
+   
+    height: 100%;
+    padding: 29rem 0px;
+}
+.contact .overlay{
+    padding-top: 70px;
+}
+.contact .container{
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-bottom: 140px;
+   
+}
+.container .container span:hover{
+   color: blue;
+   cursor: pointer;
+}
+.contact h3::after,.contact h3::before{
+    content: "";
+    position: absolute;
+    background-color: blue;
+    width: 7%;
+    height: 4px;
+    bottom: 76%;
+    left:9.5rem;
+
+  
+}
+.contact h3::before{
+    left:51%;
+}
+.contact .container span{
+    padding: 11px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 3px solid rgb(0, 120, 255);
+    margin-left: 5px;
+   transition: all 1s;
+}
+.contact .container span:hover{
+    color: #fff;
+   background-color:rgb(0, 120, 255); 
+   border: 3px solid #B6EADA;
+}
+
+
+/*tablet*/
+@media screen and ( max-width:979px) and ( min-width:768px){
+    .inner{
+        font-size: 60px;
+    }  
+    .icon .icon-1  i{
+        margin-left: -10px;
+        font-size: 5px;}
+   
+ 
+
+
+.service .container .service-2 i{
+    font-size: 10px;
+}
+}
+ /*phone land*/
+ 
+@media screen and ( max-width:767px) and ( min-width:500px){
+    .home .header h1{
+   font-size: 50px;
+    }   
+    
+    .inform .img img{
+        width: 50%;
+    }
+    
+    .icon{
+        height: 120vh;;
+    }
+    .contact .cards{
+        padding-top: 80px;
+    } 
+    .contact{
+        padding: 46rem 0px;
+    }
+}
+ /*small phone*/
+ 
+@media screen and ( max-width:499px){
+    .home .header h1{
+      font-size: 30px;
+    }
+    .contact .cards{
+        padding-top: 80px;
+    } 
+    
+    .icon{
+        height: 120vh;;
+    }
+
+    
+    .contact{
+        padding: 45rem 0px;
+    }
+    
+ }
+.home{
+    position: relative;
+}
+
+.home .overlay h1::after{
+content: "";
+    position: absolute;
+    left: 50%;
+    top:50%;
+
+    transform: translate(-50%,-50%);
+    animation:delete  5s infinite alternate;
+}
+
+ 
+
+ 
+ @keyframes delete{
+     0%{
+        content: "im|";
+ 
+    
+     }10%{
+        content: "im sh|";
+   
+
+     }
+     20%{
+        content: "im shym|";
+     }
+    
+     30%{
+        content: "im shymaa|";
+     }
+    
+     
+     40%{
+        content: "im shym|";
+     }
+    
+     
+     50%{
+        content: "im sh|";
+     }
+    
+     60%{
+        content: "im|";
+     }
+     
+     70%{
+        content: "|";
+     }
+    
+     
+     80%{
+        content: "im|";
+     }
+    
+     
+     90%{
+        content: "im dev|";
+     }
+     
+     100%{
+        content: "im devoloper|";
+     }
+    
+    
+    
+     
+    }
